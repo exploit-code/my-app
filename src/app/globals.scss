@@ -1,0 +1,65 @@
+:root {
+  --max-width: 1168px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+    "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
+    "Courier New", monospace;
+
+  --ui-background: #fff;
+  --ui-content-1: #12181d;
+  --ui-color-success: #1ac964;
+  --ui-color-warning: #f4a423;
+  --ui-color-danger: #f32961;
+  --ui-color-primary: #0070ef;
+  --ui-color-secondary: #9355d3;
+  --ui-color-default: #3f3f46;
+
+  --ui-size-2: 2px;
+  --ui-size-4: 4px;
+  --ui-size-8: 8px;
+  --ui-size-12: 12px;
+  --ui-size-16: 16px;
+  --ui-size-24: 24px;
+  --ui-size-32: 32px;
+  --ui-size-48: 48px;
+  --ui-size-64: 64px;
+  --ui-size-50-persent: 50%;
+  --ui-size-100-persent: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ui-background: #000;
+    --ui-content-1: #ecedee;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--ui-background);
+}
+
+body {
+  width: calc(100% - 32px);
+  max-width: 1168px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

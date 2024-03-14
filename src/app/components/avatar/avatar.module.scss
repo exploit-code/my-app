@@ -1,0 +1,35 @@
+.avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--ui-size-50-persent);
+  width: var(--ui-size-48);
+  height: var(--ui-size-48);
+  position: relative;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--ui-size-50-persent);
+  }
+
+  &::after {
+    content: "";
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: var(--ui-size-12);
+    height: var(--ui-size-12);
+    background-color: var(--ui-color-success);
+    border-radius: var(--ui-size-50-persent);
+    z-index: 2;
+    border: var(--ui-size-2) solid var(--ui-background);
+  }
+
+  &_border {
+    padding: var(--ui-size-2);
+    border: var(--ui-size-2) solid var(--ui-color-secondary);
+  }
+}

@@ -1,0 +1,49 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ui-accordion-background);
+  border-radius: var(--ui-size-12);
+  overflow: hidden;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: var(--ui-size-16);
+  }
+
+  &__body {
+    transition: 0.3s ease;
+    opacity: 0;
+
+    &_open {
+      will-change: auto;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    padding: var(--ui-size-16);
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: var(--ui-size-24);
+    height: var(--ui-size-24);
+    color: var(--ui-color-icons);
+    transition: transform 0.3s ease;
+
+    &_open {
+      transform: rotate(-90deg);
+    }
+  }
+}

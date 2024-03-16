@@ -12,10 +12,11 @@
     cursor: pointer;
     user-select: none;
     padding: var(--ui-size-16);
+    transition-property: opacity, height;
   }
 
   &__body {
-    transition: 0.3s ease;
+    transition: var(--ui-transition);
     opacity: 0;
 
     &_open {
@@ -34,13 +35,15 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   &__icon {
     width: var(--ui-size-24);
     height: var(--ui-size-24);
     color: var(--ui-color-icons);
-    transition: transform 0.3s ease;
+    transition: var(--ui-transition);
+    transition-property: transform;
 
     &_open {
       transform: rotate(-90deg);

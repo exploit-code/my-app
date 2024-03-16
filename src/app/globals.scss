@@ -11,10 +11,14 @@
   --ui-color-warning: #f4a423;
   --ui-color-danger: #f32961;
   --ui-color-primary: #0070ef;
+  --ui-color-focus: #0066de;
   --ui-color-secondary: #9355d3;
   --ui-color-default: #3f3f46;
   --ui-accordion-background: #edecef;
   --ui-color-icons: #78787f;
+  --ui-only-white: #fff;
+
+  --ui-transition: 0.3s ease;
 
   --ui-size-2: 2px;
   --ui-size-4: 4px;
@@ -23,10 +27,16 @@
   --ui-size-16: 16px;
   --ui-size-24: 24px;
   --ui-size-32: 32px;
+  --ui-size-40: 40px;
   --ui-size-48: 48px;
+  --ui-size-56: 56px;
   --ui-size-64: 64px;
   --ui-size-50-persent: 50%;
   --ui-size-100-persent: 100%;
+
+  --ui-font-size-small: 14px;
+  --ui-font-size-medium: 16px;
+  --ui-font-size-large: 18px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +44,7 @@
     --ui-background: #000;
     --ui-content-1: #ecedee;
     --ui-accordion-background: #18181b;
+    --ui-color-default: #18181b;
     --ui-color-icons: #a1a1aa;
   }
 }
@@ -44,6 +55,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*:focus-visible {
+  outline: var(--ui-size-2) solid var(--ui-color-focus);
+  outline-offset: var(--ui-size-2);
 }
 
 html,

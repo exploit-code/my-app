@@ -7,7 +7,15 @@ export const Header = () => {
     <header className={styles.header}>
       <div>logo</div>
       <div>
-        <Avatar src={avatar} alt={"avatar"} isBordered={true} />
+        <Avatar
+          src={avatar}
+          alt={"avatar"}
+          border={true}
+          status={true}
+          radius={"m"}
+          size={"m"}
+          color={"secondary"}
+        />
       </div>
     </header>
   );

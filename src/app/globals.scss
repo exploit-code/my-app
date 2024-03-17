@@ -42,13 +42,11 @@
   --ui-font-size-large: 18px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ui-background: #000;
-    --ui-color-accent-1: #ecedee;
-    --ui-color-default: #27272b;
-    --ui-color-icons: #a1a1aa;
-  }
+[data-theme="light"] {
+  --ui-background: #000;
+  --ui-color-accent-1: #ecedee;
+  --ui-color-default: #27272b;
+  --ui-color-icons: #a1a1aa;
 }
 
 *,

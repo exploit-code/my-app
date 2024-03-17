@@ -13,11 +13,13 @@
     user-select: none;
     padding: var(--ui-size-16);
     transition-property: opacity, height;
+    color: var(--ui-color-accent-1);
   }
 
   &__body {
     transition: var(--ui-transition);
     opacity: 0;
+    color: var(--ui-color-accent-1);
 
     &_open {
       will-change: auto;

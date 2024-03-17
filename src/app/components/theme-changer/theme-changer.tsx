@@ -17,7 +17,7 @@ export const ThemeChanger = () => {
 
   return (
     <button className={styles.themechanger} onClick={() => dispatch(themeToggled())}>
-      {theme === "light" ? (
+      {theme === "dark" ? (
         <IoSunny className={styles.themechanger__icon} />
       ) : (
         <IoMoon className={styles.themechanger__icon} />

@@ -1,21 +1,22 @@
-.button {
+.chiplink {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--ui-color-primary);
-  border: none;
-  cursor: pointer;
-  transition: var(--ui-transition);
-  white-space: nowrap;
-  appearance: none;
+  gap: var(--ui-size-8);
+  text-decoration: none;
+  color: var(--ui-color-accent-1);
+  border-radius: var(--ui-size-16);
+  word-wrap: none;
   user-select: none;
+  transition: var(--ui-transition);
   transition-property: transform, filter;
   will-change: auto;
+  appearance: none;
 
   &_color {
     &_default {
       background-color: var(--ui-color-default);
-      color: var(--ui-color-only-white);
+      color: var(--ui-color-accent-1);
     }
 
     &_primary {
@@ -44,36 +45,19 @@
     }
   }
 
-  &_radius {
-    &_s {
-      border-radius: var(--ui-size-12);
-    }
-
-    &_m {
-      border-radius: var(--ui-size-16);
-    }
-
-    &_l {
-      border-radius: var(--ui-size-24);
-    }
-  }
-
   &_size {
     &_s {
-      height: var(--ui-size-32);
-      padding: 0 var(--ui-size-12);
+      padding: var(--ui-size-2) var(--ui-size-8);
       font-size: var(--ui-font-size-small);
     }
 
     &_m {
-      height: var(--ui-size-40);
-      padding: 0 var(--ui-size-16);
+      padding: var(--ui-size-4) var(--ui-size-12);
       font-size: var(--ui-font-size-medium);
     }
 
     &_l {
-      height: var(--ui-size-48);
-      padding: 0 var(--ui-size-24);
+      padding: var(--ui-size-4) var(--ui-size-16);
       font-size: var(--ui-font-size-large);
     }
   }
@@ -85,5 +69,37 @@
 
   &:active {
     transform: scale(0.96);
+  }
+
+  &__dot {
+    width: var(--ui-size-8);
+    height: var(--ui-size-8);
+    border-radius: var(--ui-size-50-persent);
+
+    &_color {
+      &_default {
+        background-color: var(--ui-color-default);
+      }
+
+      &_primary {
+        background-color: var(--ui-color-primary);
+      }
+
+      &_secondary {
+        background-color: var(--ui-color-secondary);
+      }
+
+      &_success {
+        background-color: var(--ui-color-success);
+      }
+
+      &_warning {
+        background-color: var(--ui-color-warning);
+      }
+
+      &_danger {
+        background-color: var(--ui-color-danger);
+      }
+    }
   }
 }

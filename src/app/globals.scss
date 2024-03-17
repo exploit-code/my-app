@@ -6,17 +6,17 @@
     "Courier New", monospace;
 
   --ui-background: #fff;
-  --ui-content-1: #12181d;
+  --ui-color-accent-1: #12181d;
   --ui-color-success: #1ac964;
   --ui-color-warning: #f4a423;
   --ui-color-danger: #f32961;
   --ui-color-primary: #0070ef;
   --ui-color-focus: #0066de;
   --ui-color-secondary: #9355d3;
-  --ui-color-default: #3f3f46;
-  --ui-accordion-background: #edecef;
+  --ui-color-default: #edecef;
   --ui-color-icons: #78787f;
-  --ui-only-white: #fff;
+  --ui-color-only-white: #fff;
+  --ui-color-only-black: #000;
 
   --ui-transition: 0.3s ease;
 
@@ -42,8 +42,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --ui-background: #000;
-    --ui-content-1: #ecedee;
-    --ui-accordion-background: #18181b;
+    --ui-color-accent-1: #ecedee;
     --ui-color-default: #18181b;
     --ui-color-icons: #a1a1aa;
   }

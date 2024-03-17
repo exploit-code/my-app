@@ -1,5 +1,6 @@
 import { Accordion } from "./components/accordion/accordion";
 import { Button } from "./components/button/button";
+import { ChipLink } from "./components/chip-link/chip-link";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,14 @@ export default function HomePage() {
         }
       />
       <Button text={"button"} color={"primary"} radius={"s"} size={"m"} />
+      <ChipLink
+        link={"/"}
+        text={"chiplink"}
+        color={"default"}
+        size={"s"}
+        dot={true}
+        dotcolor={"warning"}
+      />
     </>
   );
 }

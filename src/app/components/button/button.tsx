@@ -13,7 +13,7 @@ export const Button = ({ text, color, radius, size }: IButtonProps) => {
     <button
       className={cn(
         styles.button,
-        styles[`button_bg_${color}`],
+        styles[`button_color_${color}`],
         styles[`button_radius_${radius}`],
         styles[`button_size_${size}`]
       )}

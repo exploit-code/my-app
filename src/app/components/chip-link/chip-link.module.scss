@@ -13,6 +13,38 @@
   will-change: auto;
   appearance: none;
 
+  &__dot {
+    width: var(--ui-size-8);
+    height: var(--ui-size-8);
+    border-radius: var(--ui-size-50-persent);
+
+    &_color {
+      &_default {
+        background-color: var(--ui-color-default);
+      }
+
+      &_primary {
+        background-color: var(--ui-color-primary);
+      }
+
+      &_secondary {
+        background-color: var(--ui-color-secondary);
+      }
+
+      &_success {
+        background-color: var(--ui-color-success);
+      }
+
+      &_warning {
+        background-color: var(--ui-color-warning);
+      }
+
+      &_danger {
+        background-color: var(--ui-color-danger);
+      }
+    }
+  }
+
   &_color {
     &_default {
       background-color: var(--ui-color-default);
@@ -64,42 +96,11 @@
 
   &:hover,
   &:active {
-    filter: contrast(110%);
+    filter: var(--ui-saturate);
+
   }
 
   &:active {
-    transform: scale(0.96);
-  }
-
-  &__dot {
-    width: var(--ui-size-8);
-    height: var(--ui-size-8);
-    border-radius: var(--ui-size-50-persent);
-
-    &_color {
-      &_default {
-        background-color: var(--ui-color-default);
-      }
-
-      &_primary {
-        background-color: var(--ui-color-primary);
-      }
-
-      &_secondary {
-        background-color: var(--ui-color-secondary);
-      }
-
-      &_success {
-        background-color: var(--ui-color-success);
-      }
-
-      &_warning {
-        background-color: var(--ui-color-warning);
-      }
-
-      &_danger {
-        background-color: var(--ui-color-danger);
-      }
-    }
+    transform: var(--ui-active-scale);
   }
 }

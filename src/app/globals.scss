@@ -11,14 +11,17 @@
   --ui-color-warning: #f4a423;
   --ui-color-danger: #f32961;
   --ui-color-primary: #0070ef;
-  --ui-color-focus: #0066de;
   --ui-color-secondary: #9355d3;
-  --ui-color-default: #edecef;
+  --ui-color-default: #f4f4f5;
+
   --ui-color-icons: #78787f;
+  --ui-color-icons-focus: #83828b;
   --ui-color-only-white: #fff;
   --ui-color-only-black: #000;
 
   --ui-transition: 0.3s ease;
+  --ui-saturate: saturate(200%);
+  --ui-active-scale: scale(0.96);
 
   --ui-size-2: 2px;
   --ui-size-4: 4px;
@@ -43,7 +46,7 @@
   :root {
     --ui-background: #000;
     --ui-color-accent-1: #ecedee;
-    --ui-color-default: #18181b;
+    --ui-color-default: #27272b;
     --ui-color-icons: #a1a1aa;
   }
 }

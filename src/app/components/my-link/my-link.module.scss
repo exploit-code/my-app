@@ -1,6 +1,8 @@
 .mylink {
   display: inline-flex;
   text-decoration: none;
+  transition: var(--ui-transition);
+  transition-property: transform, filter;
 
   &_color {
     &_default {
@@ -44,5 +46,10 @@
     &_l {
       font-size: var(--ui-font-size-large);
     }
+  }
+
+  &:hover,
+  &:active {
+    filter: var(--ui-saturate);
   }
 }

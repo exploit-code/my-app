@@ -5,17 +5,17 @@
   background-color: var(--ui-color-primary);
   border: none;
   cursor: pointer;
-  transition: var(--ui-transition);
   white-space: nowrap;
   appearance: none;
   user-select: none;
+  transition: var(--ui-transition);
   transition-property: transform, filter;
   will-change: auto;
 
   &_color {
     &_default {
       background-color: var(--ui-color-default);
-      color: var(--ui-color-only-white);
+      color: var(--ui-color-accent-1);
     }
 
     &_primary {
@@ -80,10 +80,10 @@
 
   &:hover,
   &:active {
-    filter: contrast(110%);
+    filter: var(--ui-saturate);
   }
 
   &:active {
-    transform: scale(0.96);
+    transform: var(--ui-active-scale);
   }
 }

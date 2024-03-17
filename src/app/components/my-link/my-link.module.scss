@@ -1,0 +1,48 @@
+.mylink {
+  display: inline-flex;
+  text-decoration: none;
+
+  &_color {
+    &_default {
+      color: var(--ui-color-default);
+    }
+
+    &_primary {
+      color: var(--ui-color-primary);
+    }
+
+    &_secondary {
+      color: var(--ui-color-secondary);
+    }
+
+    &_success {
+      color: var(--ui-color-success);
+    }
+
+    &_warning {
+      color: var(--ui-color-warning);
+    }
+
+    &_danger {
+      color: var(--ui-color-danger);
+    }
+  }
+
+  &_underline {
+    text-decoration: underline;
+  }
+
+  &_size {
+    &_s {
+      font-size: var(--ui-font-size-small);
+    }
+
+    &_m {
+      font-size: var(--ui-font-size-medium);
+    }
+
+    &_l {
+      font-size: var(--ui-font-size-large);
+    }
+  }
+}

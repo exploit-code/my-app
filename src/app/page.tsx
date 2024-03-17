@@ -1,6 +1,7 @@
 import { Accordion } from "./components/accordion/accordion";
 import { Button } from "./components/button/button";
 import { ChipLink } from "./components/chip-link/chip-link";
+import { MyLink } from "./components/my-link/my-link";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         dot={true}
         dotcolor={"warning"}
       />
+      <MyLink text={"link"} link={"/"} color={"secondary"} size={"m"} underline={true}/>
     </>
   );
 }
